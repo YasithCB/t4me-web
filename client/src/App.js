@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import { ToastContainer } from "react-toastify";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
