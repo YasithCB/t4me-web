@@ -14,7 +14,7 @@ const Header = () => {
               </p>
             </div>
             <div className="col-6 d-flex align-items-center justify-content-end">
-              <NavLink className='text-white m-0 pe-5 link' to="/admin">Admins Login</NavLink>
+              <NavLink className='text-white m-0 pe-5 link' to="/login">Login</NavLink>
               <p className="text-white mb-0">
                 Hotline :{" "}
                 <a className="text-white link" href="tel:+94767722095">

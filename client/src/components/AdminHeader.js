@@ -12,7 +12,7 @@ const AdminHeader = () => {
               <p className="text-white mb-0">Welcome Admin!</p>
             </div>
             <div className="col-6 d-flex align-items-center justify-content-end">
-              <NavLink className="text-white m-0 pe-5" to="/admin">
+              <NavLink className="text-white m-0 pe-5" to="/">
                 Logout from Admin
               </NavLink>
               <p className="text-white mb-0">

@@ -9,7 +9,7 @@ import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 import AdminLayout from "./components/AdminLayout";
 import AdminHome from "./pages/AdminDashboard";
-import UserLogin from "./pages/UserLogin";
+import Login from "./pages/Login";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -19,12 +19,6 @@ function App() {
       .then((res) => res.text())
       .then((data) => setMessage(data));
   }, []);
-
-  // return (
-  //   <div className="App">
-  //     <h1>{message}</h1>
-  //   </div>
-  // );
 
   return (
     <>
@@ -39,7 +33,7 @@ function App() {
           <Route path="admin/" element={<AdminLayout />}>
             <Route index element={<AdminHome />} />
           </Route>
-          <Route path="userlogin" element={<UserLogin />}/>
+          <Route path="login" element={<Login />}/>
         </Routes>
       </BrowserRouter>
     </>
